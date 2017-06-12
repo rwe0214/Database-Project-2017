@@ -1,0 +1,1 @@
+SELECT a.p_name AS proj1, b.p_name AS proj2, d.d_name AS department, u.* FROM user u JOIN dep d ON d.d_id=u.u_dep JOIN project a ON a.p_id=u.u_proj1 JOIN project b ON b.p_id=u.u_proj2 WHERE u_id=2 AND u_active=1
